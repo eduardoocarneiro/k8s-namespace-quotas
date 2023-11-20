@@ -1,5 +1,5 @@
 # Configurando cotas de memória e CPU para um namespace no Kubernetes
-Esse documento mostra como configurar cotas para memória e CPU que podem ser usadas para Pods rodando em um determinado namespace. Você pode especificar cotas utilizando o objeto **ResourceQuota** do Kubernetes.
+Esse documento mostra como configurar cotas para memória e CPU que podem ser usadas para Pods rodando em um determinado namespace. Você pode especificar cotas utilizando o objeto <a href="https://kubernetes.io/docs/reference/kubernetes-api/policy-resources/resource-quota-v1/">ResourceQuota</a> do Kubernetes.
 
 ## Pré-requisitos:
 Para seguir esse documento, você deve possuir os seguintes requisitos:
@@ -19,7 +19,7 @@ kubectl create namespace ns-quota-mem-cpu
 ```
 
 ## Criando o ResourceQuota
-Agora vamos criar o <a href="https://kubernetes.io/docs/reference/kubernetes-api/policy-resources/resource-quota-v1/">ResourceQuota</a>. Esse recurso vai definir os requests e limits do namespace. Execute o comando abaixo para criar o arquivo de configuração do ResourceQuota:
+Agora vamos criar o **ResourceQuota**. Esse recurso vai definir os requests e limits do namespace. Execute o comando abaixo para criar o arquivo de configuração do ResourceQuota:
 
 ```
 kubectl apply -f yamls/resourcequota.yaml
