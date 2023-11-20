@@ -5,7 +5,7 @@ Esse documento mostra como configurar cotas para memória e CPU que podem ser us
 Para seguir esse documento, você deve possuir os seguintes requisitos:
 
 * Cluster Kubernetes em funcionamento
-* Ferramenta de linha de comando **kubectl** precisa está configurada para comunicar com ele.
+* Ferramenta de linha de comando **kubectl** precisa está configurada para comunicar com ele
 * Permissão para criar namespaces no cluster
 * Cada nó do cluster precisa ter pelo menos 1 GiB de memória
 
