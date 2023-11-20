@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quota-mem-cpu-2
+  namespace: ns-quota-mem-cpu
+spec:
+  selector:
+    matchLabels:
+      run: quota-mem-cpu
+  template:
+    metadata:
+      labels:
+        run: quota-mem-cpu
+    spec:
+      containers:
+      - name: quota-mem-cpu
+        image: nginx
+        resources:
+          limits:
+            memory: "1Gi"
+            cpu: "800m"
+          requests:
+            memory: "700Mi"
+            cpu: "400m"
