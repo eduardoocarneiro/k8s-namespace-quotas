@@ -50,7 +50,7 @@ Terminada a criação do ResourceQuota, vamos agora criar o Pod com os requisito
 Utilizando o arquivo [deployment-1.yaml](yamls/deployment-1.yaml) do diretório yamls, rode o comando abaixo para criar o deployment que iniciará o Pod que precisamos:
 
 ```
-kubectl apply -f yamls/deployment.yaml
+kubectl apply -f yamls/deployment-1.yaml
 ```
 
 Verifique se o Pod está rodando:
