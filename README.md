@@ -65,7 +65,7 @@ Verifique novamente as informações detalhadas do ResourceQuota:
 kubectl get resourcequota quota-mem-cpu -n ns-quota-mem-cpu --output=yaml
 ```
 
-Você perceberá que agora temos o campo **used** como mostra esse trecho da saída do comando executado no passo anterior. Esse campo identifica a quantidade de recursos utilizados no namespace **ns-quota-mem-cpu**. Repare que os recursos utilizados são exatamente os mesmos que o nosso Pod está configurado para consumir.
+Você perceberá que agora o campo **used** identifica a quantidade de recursos utilizados no namespace **ns-quota-mem-cpu**. Repare que os recursos utilizados são exatamente os mesmos que o nosso Pod está configurado para consumir.
 
 ```
 status:
